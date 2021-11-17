@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <div class="page-header">
@@ -16,7 +16,26 @@
         <nav class="nav">
           <a class="company-logo" href="">Логотип</a>
 
-          <button
+          <button 
+          type="button" 
+          class="menu-button"
+          data-menu-button
+          aria-expanded="false"
+          aria-colcount="menu-container">
+            
+            <svg 
+            width="40" 
+            height="40"
+            aria-label="Переключатель мобильного меню"
+            >
+             
+              <use class="icon-cross" href="./img/sprite.svg#cross"></use>
+              <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+            </svg>
+            </svg>
+          </button>
+
+          <!-- <button
             type="button"
             class="menu-button"
             aria-expanded="false"
@@ -31,11 +50,11 @@
               <use class="icon-cross" href="./img/sprite.svg#cross"></use>
               <use class="icon-menu" href="./img/sprite.svg#menu"></use>
             </svg>
-          </button>
+          </button> -->
 
           <div class="menu-container" id="menu-container" data-menu>
-            <div class="navigation"></div>
-            <div class="contacts"></div>
+            <div class="navigation">nav</div>
+            <div class="contacts">cont</div>
           </div>
         </nav>
       </div>
